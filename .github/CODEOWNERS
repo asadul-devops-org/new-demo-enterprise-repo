@@ -1,0 +1,15 @@
+# Rule 1: The Safety Net (Default Owner)
+*                       @MyCompany/lead-architects
+
+# Rule 2: Frontend files
+*.js                    @MyCompany/frontend-team
+
+# Rule 3: Database folder
+/db/migrations/         @MyCompany/dba-team
+
+# Rule 4: Infrastructure & Kubernetes
+/infra/terraform/       @MyCompany/devops-team
+/k8s/                   @MyCompany/devops-team
+
+# Rule 5: Special exception inside the Frontend!
+/src/config/deploy.js   @MyCompany/devops-team
