@@ -1,0 +1,17 @@
+name: Test AKS Auto-scaling Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-aks-arc:
+    runs-on: aks-autoscaler-fleet
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Inspect Runner Environment
+        run: |
+          echo "Successfully running on AKS ARC pod!"
+          hostname
+          docker version
